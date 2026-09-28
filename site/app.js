@@ -17,6 +17,34 @@
     return svg;
   }
 
+  function setupTicker() {
+    const ticker = $('ticker');
+    const track = ticker?.querySelector('.ticker-track');
+    const template = track?.querySelector('.ticker-unit')?.cloneNode(true);
+    if (!ticker || !track || !template) return;
+    let lastWidth = 0;
+    function fill() {
+      const unit = track.querySelector('.ticker-unit');
+      const unitWidth = unit?.getBoundingClientRect().width;
+      if (!unitWidth) return;
+      const copies = Math.max(2, Math.ceil(ticker.clientWidth / unitWidth));
+      const group = document.createElement('div');
+      group.className = 'ticker-group';
+      for (let i = 0; i < copies; i++) group.append(template.cloneNode(true));
+      // Two identical groups: a half-track translation is exactly one group.
+      track.replaceChildren(group, group.cloneNode(true));
+      track.style.setProperty('--ticker-duration', `${copies * unitWidth / 45}s`);
+      lastWidth = ticker.clientWidth;
+    }
+    fill();
+    document.fonts?.ready.then(fill);
+    if ('ResizeObserver' in window) {
+      new ResizeObserver(() => {
+        if (ticker.clientWidth !== lastWidth) fill();
+      }).observe(ticker);
+    } else window.addEventListener('resize', fill);
+  }
+
   function lockScroll(reason) {
     if (!scrollLocks.size) previousOverflow = document.body.style.overflow;
     scrollLocks.add(reason);
@@ -309,6 +337,7 @@
   }
 
   function init() {
+    setupTicker();
     setupCountdown();
     setupMemes();
     setupPresident();

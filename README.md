@@ -45,6 +45,12 @@ The profile background reinterprets the official presidential portrait's office,
 
 The owner's announced token plan is a total supply of 1,000,000,000 $MACOIN and 0% token tax. The treasury card explains that pump.fun platform fees are separate, with a portion going to the Trésor Public of Soluna. These are prelaunch specifications, not claims that a contract has already been deployed or verified. Allocation and liquidity details remain unannounced; do not invent burns, locks, audits or distribution percentages.
 
+## Interface icons and ticker
+
+Navigation, action and star icons are Google's Material Icons, bundled as SVG symbols in `site/icons.svg` under Apache 2.0 (license in `site/fonts/LICENSE-material-icons.txt`). The vest and Solana mark remain custom SVG drawings. No emoji characters or external icon-font requests are used.
+
+The ticker repeats equal-width groups, fills each group to at least the viewport width, and recalculates after fonts load or the window resizes. Motion respects reduced-motion preferences.
+
 ## Contents
 
 - `site/`: deployable HTML, CSS, vanilla JavaScript, local fonts and original supplied artwork.

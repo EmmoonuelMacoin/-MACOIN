@@ -99,3 +99,10 @@
 .vest-badge{background:var(--ink);color:var(--vest)}
 .launch-actions .button{background:var(--vest);color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
 .launch-actions .button:hover{background:#efff59}
+
+/* Equal repeated groups make the marquee continuous at every viewport width. */
+.ticker-track{gap:0;animation-duration:var(--ticker-duration,48s)}
+.ticker-group{display:flex;flex:none;min-width:100vw}
+.ticker-unit{display:flex;flex:none;align-items:center;gap:38px;padding-right:38px;white-space:nowrap;width:max-content}
+.ticker-unit>*{flex:none}.ticker-unit b{align-items:center;justify-content:center}.ticker-unit .icon{width:22px;height:22px}
+@media(max-width:600px){.ticker-unit{gap:25px;padding-right:25px}}
