@@ -37,7 +37,7 @@ Edit `site/config.js` to add the verified contract address and specific pump.fun
 
 The date also appears in `site/index.html`, the page metadata and `site/macoin-lancement.ics`. Update all of these if the announced launch date changes.
 
-The original social preview is preserved in `site/og.png`. The canonical URL and both social image URLs use the production domain `https://macoin.lol`.
+The presidential profile image in `site/logo.png` also supplies the favicon, Apple touch icon and social preview. Run `powershell -File tools/export-brand-assets.ps1` on Windows to re-export them without changing the artwork. `site/og.png` is the full square portrait; the X summary card preserves its square composition. The canonical URL, social metadata, structured website data and sitemap use `https://macoin.lol`. Search engines choose when to refresh their cached icons and previews.
 
 The current art direction uses cobalt, navy, ivory and a restrained red accent. The profile background reinterprets the official presidential portrait's office, garden and flags in cartoon style; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature.
 
