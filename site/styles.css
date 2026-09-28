@@ -62,7 +62,7 @@
 /* Inline SVG icons keep every interface symbol independent of emoji fonts. */
 .icon{display:inline-block;width:22px;height:22px;flex:none;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .small-star,.solana-bars{display:inline-flex}.ticker-track b{display:inline-flex}.dialog-close{display:grid;place-items:center}.official-link,.copy-contract:not(:disabled){display:inline-flex;gap:8px;align-items:center}.official-link .icon,.copy-contract .icon{width:15px;height:15px}
-:root{--vest:#e5f23d;--vest-soft:#f3f7ca}
+:root{--vest:#e8ff00;--vest-soft:#f3f7ca}
 .nav-launch .live-dot,.launch-top .live-dot{color:var(--vest)}
 .date-sticker{background:var(--vest)}
 .roundabout-tag{display:inline-flex;align-items:center;gap:10px;margin-top:22px;max-width:100%;padding:9px 12px;background:var(--vest-soft);border-left:3px solid var(--vest);font-size:9px;font-weight:700;letter-spacing:.04em;line-height:1.5}
@@ -85,3 +85,17 @@
 @media(max-width:800px){.token-layout{grid-template-columns:1fr}.coin-showcase{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;align-items:center}.coin-caption{grid-column:1/-1}.coin-showcase>img{width:100%;max-width:280px}.coin-showcase strong{font-size:2.8rem}.token-layout .token-grid strong{font-size:2.5rem}}
 @media(max-width:600px){.roundabout-tag{font-size:8px;margin-top:18px;padding:8px 10px}.token-layout{gap:18px}.coin-showcase{padding:18px;gap:0 14px}.coin-showcase strong{font-size:2rem}.coin-showcase p{font-size:10px}.coin-showcase a{font-size:10px;gap:5px}.coin-caption{font-size:8px}.token-layout .token-grid article{padding:20px 13px}.token-layout .token-grid strong{font-size:clamp(1.8rem,6.5vw,2.4rem)}.token-layout .token-grid p{font-size:10px}.token-layout .token-label{font-size:8px}.token-plan{font-size:10px}.roundabout-note{gap:14px;padding:20px 16px;margin-top:24px}.vest-badge{width:37px;height:42px}.vest-badge .icon{width:27px;height:27px}.roundabout-note .eyebrow{font-size:8px;letter-spacing:.04em}.roundabout-note h3{font-size:1.75rem}.roundabout-note p:not(.eyebrow){font-size:12px}.roundabout-note small{font-size:9px}}
 @media(max-width:600px){.coin-showcase{display:flex;gap:0}.coin-showcase>img{width:85%;max-width:250px;margin-block:22px}.coin-showcase strong{font-size:2.5rem}.coin-showcase p{font-size:12px}.coin-showcase a{font-size:11px}}
+
+/* Every visible 17 October reference uses the same fluorescent vest yellow. */
+.nav-launch,.roundabout-tag,.hero-actions>a[href="#lancement"],.token-launch-date{background:var(--vest);color:var(--ink);border-color:var(--ink)}
+.nav-launch .live-dot,.launch-top .live-dot{color:var(--ink)}
+.nav-launch:hover,.roundabout-tag:hover,.hero-actions>a[href="#lancement"]:hover{background:#efff59}
+.date-marker{background:var(--vest);color:var(--ink);padding:2px 10px}
+.launch-section{background:var(--vest);color:var(--ink);border-color:var(--ink)}
+.launch-section h2{border-bottom-color:#17263f55}.launch-section h2>span{-webkit-text-stroke-color:var(--ink)}
+.launch-bottom p,.roundabout-note p:not(.eyebrow),.roundabout-note small{color:var(--ink)}
+.roundabout-note{background:transparent;border:1px solid #17263f55;border-left:4px solid var(--ink)}
+.roundabout-note .eyebrow{color:var(--ink)}.roundabout-note a{border-bottom-color:var(--ink)}
+.vest-badge{background:var(--ink);color:var(--vest)}
+.launch-actions .button{background:var(--vest);color:var(--ink);border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.launch-actions .button:hover{background:#efff59}
