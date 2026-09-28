@@ -33,15 +33,15 @@ For manual deployment, upload the contents of `site/`. Do not upload the whole w
 
 ## Launch configuration
 
-Edit `site/config.js` to add the verified contract address and specific pump.fun, DexScreener and X links. Empty or invalid values are deliberately not actionable. The site never automatically announces a live token solely because the date has arrived. The countdown uses calendar days in Europe/Paris; the downloadable event is an all-day, tentative event, with no invented launch hour.
+Edit `site/config.js` to add the verified contract address and specific pump.fun, DexScreener and X links. Empty or invalid values are deliberately not actionable. The site never automatically announces a live token solely because the date has arrived. The countdown uses calendar days in Europe/Paris, with no invented launch hour. Only archive images have download controls; do not add calendar, coin or other download links.
 
-The date also appears in `site/index.html`, the page metadata and `site/macoin-lancement.ics`. Update all of these if the announced launch date changes.
+The date also appears in `site/index.html` and the page metadata. Update all of these if the announced launch date changes.
 
 The presidential profile image in `site/logo.png` also supplies the favicon, Apple touch icon and social preview. Run `powershell -File tools/export-brand-assets.ps1` on Windows to re-export them without changing the artwork. `site/og.png` is the full square portrait; the X summary card preserves its square composition. The canonical URL, social metadata, structured website data and sitemap use `https://macoin.lol`. Search engines choose when to refresh their cached icons and previews.
 
 The current art direction uses cobalt, navy, ivory and restrained red, with fluorescent vest yellow (`#e8ff00`) for every visible 17 October reference: navigation button, hero date sticker and links, ticker dates, tokenomics launch card and the entire rendezvous section. Yellow surfaces use dark navy text for contrast. A vest icon and roundabout copy acknowledge the call for a Gilets jaunes mobilisation on that date, with a source link and no claimed affiliation. UI symbols use the local SVG sprite `site/icons.svg`; do not add emoji to the interface.
 
-The profile background reinterprets the official presidential portrait's office, garden and flags in cartoon style; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature. `site/macoin-coin.png` is a separate front-facing cartoon token illustration with a silver ring and gold centre, available to download in the tokenomics section.
+The profile background reinterprets the official presidential portrait's office, garden and flags in cartoon style; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature. `site/macoin-coin.png` is a separate front-facing cartoon token illustration with a silver ring and gold centre, displayed in the tokenomics section without a download link.
 
 The owner's announced token plan is a total supply of 1,000,000,000 $MACOIN and 0% token tax. The treasury card explains that pump.fun platform fees are separate, with a portion going to the Trésor Public of Soluna. These are prelaunch specifications, not claims that a contract has already been deployed or verified. Allocation and liquidity details remain unannounced; do not invent burns, locks, audits or distribution percentages.
 
