@@ -39,7 +39,7 @@ The date also appears in `site/index.html`, the page metadata and `site/macoin-l
 
 The original social preview is preserved in `site/og.png`. The canonical URL and both social image URLs use the production domain `https://macoin.lol`.
 
-The current art direction uses cobalt, navy, ivory and a restrained red accent. The profile background is tricolour; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature.
+The current art direction uses cobalt, navy, ivory and a restrained red accent. The profile background reinterprets the official presidential portrait's office, garden and flags in cartoon style; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature.
 
 ## Contents
 
