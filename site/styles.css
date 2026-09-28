@@ -29,7 +29,7 @@
 @media(max-width:600px){.mascot-button{bottom:46px;height:calc(100% - 71px)}.poster-top{font-size:8px}.pledges p,.minister-news,.token-grid p,.buy-steps p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.ticker-track{animation:none}}
 
-/* Presidential campaign palette. Yellow is reserved for the archive vests. */
+/* Presidential campaign palette with restrained yellow-vest accents. */
 :root{--accent-soft:#e0e8fa;--red:#d8443f}
 ::selection{background:var(--accent);color:#fff}
 .broadcast{background:var(--ink)}.broadcast .live-dot{color:#f0d364}
@@ -58,3 +58,30 @@
 .back-top>span{color:var(--paper)}.footer-top{border-bottom-color:#52617a}.footer-bottom{color:#c1ccdd}
 .toast{border-color:#9cbaff}
 @media(max-width:600px){.hero-intro{font-size:14px}.launch-bottom h3{font-size:22px}.launch-bottom p{font-size:13px}}
+
+/* Inline SVG icons keep every interface symbol independent of emoji fonts. */
+.icon{display:inline-block;width:22px;height:22px;flex:none;vertical-align:middle;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.small-star,.solana-bars{display:inline-flex}.ticker-track b{display:inline-flex}.dialog-close{display:grid;place-items:center}.official-link,.copy-contract:not(:disabled){display:inline-flex;gap:8px;align-items:center}.official-link .icon,.copy-contract .icon{width:15px;height:15px}
+:root{--vest:#e5f23d;--vest-soft:#f3f7ca}
+.nav-launch .live-dot,.launch-top .live-dot{color:var(--vest)}
+.date-sticker{background:var(--vest)}
+.roundabout-tag{display:inline-flex;align-items:center;gap:10px;margin-top:22px;max-width:100%;padding:9px 12px;background:var(--vest-soft);border-left:3px solid var(--vest);font-size:9px;font-weight:700;letter-spacing:.04em;line-height:1.5}
+.roundabout-tag .icon{width:21px;height:21px}.roundabout-tag:hover{background:var(--vest)}
+.token-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:24px;align-items:stretch}
+.coin-showcase{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:space-between;min-width:0;margin:0;padding:22px 26px 28px;background:var(--accent);color:var(--paper);overflow:hidden;border:1px solid var(--ink)}
+.coin-caption{display:flex;justify-content:space-between;gap:14px;width:100%;font-size:9px;font-weight:700;letter-spacing:.06em}
+.coin-showcase>img{width:min(100%,330px);height:auto;filter:drop-shadow(0 16px 15px #09173955);margin-block:15px}
+.coin-showcase figcaption{width:100%}.coin-showcase strong{font-family:var(--display);font-size:clamp(2rem,3.5vw,3.4rem);line-height:.95;display:block}.coin-showcase p{font-size:12px;line-height:1.7;margin-top:12px;color:#e2eafe}.coin-showcase a{display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:700;margin-top:20px;padding-bottom:4px;border-bottom:1px solid #ffffff70}
+.token-layout .token-grid{grid-template-columns:repeat(2,minmax(0,1fr));min-width:0}
+.token-layout .token-grid article{padding:23px;border:0;border-right:1px solid var(--ink);border-bottom:1px solid var(--ink);min-width:0}
+.token-layout .token-grid article:nth-child(2n){border-right:0}.token-layout .token-grid article:nth-last-child(-n+2){border-bottom:0}
+.token-layout .token-grid strong{font-size:clamp(2rem,3.1vw,3rem);margin-block:17px 10px;letter-spacing:-.02em}
+.token-supply{background:var(--accent-soft)}.token-tax strong{color:var(--accent)}.token-tax .token-label::before{content:'';display:inline-block;width:7px;height:7px;background:var(--vest);outline:1px solid #879334;margin-right:8px}
+.token-plan{font-size:11px;line-height:1.8;color:var(--muted);max-width:850px;margin-top:19px}
+.roundabout-note{display:flex;align-items:flex-start;gap:24px;margin-top:32px;padding:25px 28px;background:#142d7455;border-left:4px solid var(--vest)}
+.vest-badge{display:grid;place-items:center;width:56px;height:56px;flex:none;color:var(--ink);background:var(--vest);transform:rotate(-5deg)}.vest-badge .icon{width:35px;height:35px;stroke-width:1.4}
+.roundabout-note .eyebrow{font-size:10px;color:var(--vest);margin-bottom:12px}.roundabout-note h3{font-family:var(--display);font-size:clamp(1.9rem,3vw,2.8rem);line-height:1.05;font-weight:800}.roundabout-note p:not(.eyebrow){font-size:13px;line-height:1.8;max-width:670px;margin-top:12px;color:#e2eafe}.roundabout-note a{display:inline-flex;align-items:center;gap:8px;font-size:11px;border-bottom:1px solid #ffffff70;margin-top:12px}.roundabout-note a .icon{width:15px;height:15px}.roundabout-note small{display:block;color:#c3d3f8;font-size:10px;margin-top:10px}
+.launch-actions .button{background:var(--vest)}.launch-actions .button:hover{background:#f0fc6b}
+@media(max-width:800px){.token-layout{grid-template-columns:1fr}.coin-showcase{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;align-items:center}.coin-caption{grid-column:1/-1}.coin-showcase>img{width:100%;max-width:280px}.coin-showcase strong{font-size:2.8rem}.token-layout .token-grid strong{font-size:2.5rem}}
+@media(max-width:600px){.roundabout-tag{font-size:8px;margin-top:18px;padding:8px 10px}.token-layout{gap:18px}.coin-showcase{padding:18px;gap:0 14px}.coin-showcase strong{font-size:2rem}.coin-showcase p{font-size:10px}.coin-showcase a{font-size:10px;gap:5px}.coin-caption{font-size:8px}.token-layout .token-grid article{padding:20px 13px}.token-layout .token-grid strong{font-size:clamp(1.8rem,6.5vw,2.4rem)}.token-layout .token-grid p{font-size:10px}.token-layout .token-label{font-size:8px}.token-plan{font-size:10px}.roundabout-note{gap:14px;padding:20px 16px;margin-top:24px}.vest-badge{width:37px;height:42px}.vest-badge .icon{width:27px;height:27px}.roundabout-note .eyebrow{font-size:8px;letter-spacing:.04em}.roundabout-note h3{font-size:1.75rem}.roundabout-note p:not(.eyebrow){font-size:12px}.roundabout-note small{font-size:9px}}
+@media(max-width:600px){.coin-showcase{display:flex;gap:0}.coin-showcase>img{width:85%;max-width:250px;margin-block:22px}.coin-showcase strong{font-size:2.5rem}.coin-showcase p{font-size:12px}.coin-showcase a{font-size:11px}}

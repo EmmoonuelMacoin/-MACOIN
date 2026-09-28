@@ -7,6 +7,16 @@
   let previousOverflow = '';
   let toastTimer;
 
+  function createIcon(name) {
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.classList.add('icon');
+    svg.setAttribute('aria-hidden', 'true');
+    const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
+    use.setAttribute('href', `icons.svg#${name}`);
+    svg.append(use);
+    return svg;
+  }
+
   function lockScroll(reason) {
     if (!scrollLocks.size) previousOverflow = document.body.style.overflow;
     scrollLocks.add(reason);
@@ -118,7 +128,7 @@
         image.decoding = 'async';
         const icon = document.createElement('span');
         icon.className = 'meme-expand';
-        icon.textContent = '↗';
+        icon.append(createIcon('arrow-up-right'));
         icon.setAttribute('aria-hidden', 'true');
         button.append(image, icon);
         button.addEventListener('click', () => openMeme(meme, button));
@@ -136,7 +146,7 @@
       grid.replaceChildren(fragment);
       if (more) {
         more.setAttribute('aria-expanded', String(expanded));
-        more.textContent = expanded ? 'Close ze archives −' : 'All ze archives (10) +';
+        more.replaceChildren(document.createTextNode(expanded ? 'Close ze archives ' : 'All ze archives (10) '), createIcon(expanded ? 'minus' : 'plus'));
       }
     }
 
@@ -254,7 +264,8 @@
     if (field) field.textContent = validAddress ? address : 'CA coming at launch, mes amis';
     if (copy) {
       copy.disabled = !validAddress;
-      copy.textContent = validAddress ? 'COPY CA ↗' : 'COMING SOON';
+      copy.textContent = validAddress ? 'COPY CA' : 'COMING SOON';
+      if (validAddress) copy.append(createIcon('arrow-up-right'));
       copy.setAttribute('aria-disabled', String(!validAddress));
       copy.addEventListener('click', async () => {
         if (!validAddress) return;
@@ -270,9 +281,9 @@
     const links = $('official-links');
     if (!links) return;
     const rules = [
-      { key: 'pumpUrl', hosts: ['pump.fun', 'www.pump.fun'], label: 'View on pump.fun ↗' },
-      { key: 'chartUrl', hosts: ['dexscreener.com', 'www.dexscreener.com'], label: 'Ze chart ↗' },
-      { key: 'xUrl', hosts: ['x.com', 'www.x.com', 'twitter.com', 'www.twitter.com'], label: 'Follow on X ↗' },
+      { key: 'pumpUrl', hosts: ['pump.fun', 'www.pump.fun'], label: 'View on pump.fun' },
+      { key: 'chartUrl', hosts: ['dexscreener.com', 'www.dexscreener.com'], label: 'Ze chart' },
+      { key: 'xUrl', hosts: ['x.com', 'www.x.com', 'twitter.com', 'www.twitter.com'], label: 'Follow on X' },
     ];
     links.replaceChildren();
     for (const rule of rules) {
@@ -285,6 +296,7 @@
         const anchor = document.createElement('a');
         anchor.href = url.href;
         anchor.textContent = rule.label;
+        anchor.append(createIcon('arrow-up-right'));
         anchor.className = 'official-link';
         anchor.target = '_blank';
         anchor.rel = 'noopener noreferrer';

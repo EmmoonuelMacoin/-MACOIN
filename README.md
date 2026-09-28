@@ -39,7 +39,11 @@ The date also appears in `site/index.html`, the page metadata and `site/macoin-l
 
 The presidential profile image in `site/logo.png` also supplies the favicon, Apple touch icon and social preview. Run `powershell -File tools/export-brand-assets.ps1` on Windows to re-export them without changing the artwork. `site/og.png` is the full square portrait; the X summary card preserves its square composition. The canonical URL, social metadata, structured website data and sitemap use `https://macoin.lol`. Search engines choose when to refresh their cached icons and previews.
 
-The current art direction uses cobalt, navy, ivory and a restrained red accent. The profile background reinterprets the official presidential portrait's office, garden and flags in cartoon style; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature.
+The current art direction uses cobalt, navy, ivory and restrained red, with small high-visibility yellow accents around the 17 October launch. A vest icon and roundabout copy acknowledge the call for a Gilets jaunes mobilisation on that date, with a source link and no claimed affiliation. UI symbols use the local SVG sprite `site/icons.svg`; do not add emoji to the interface.
+
+The profile background reinterprets the official presidential portrait's office, garden and flags in cartoon style; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature. `site/macoin-coin.png` is a separate front-facing cartoon token illustration with a silver ring and gold centre, available to download in the tokenomics section.
+
+The owner's announced token plan is a total supply of 1,000,000,000 $MACOIN, 1% buy tax and 1% sell tax. These are prelaunch specifications, not claims that a contract has already been deployed or verified. Allocation, liquidity and implementation details remain unannounced; do not invent burns, locks, audits or distribution percentages. Confirm launch-platform compatibility before deploying the token.
 
 ## Contents
 
