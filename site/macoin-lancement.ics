@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MACOIN//Announced launch//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:macoin-launch-20261017@macoin.local
+DTSTAMP:20260928T000000Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Ze announced $MACOIN launch
+DESCRIPTION:Announced date: 17 October 2026. Launch time and token address
+  to be confirmed on ze project website. Fictional satire. Foshur.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

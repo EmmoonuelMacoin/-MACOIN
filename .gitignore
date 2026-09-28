@@ -1,0 +1,11 @@
+/sources/
+site/qa-preview.html
+/docs/
+/.artifacts/
+node_modules/
+.wrangler/
+.env
+.env.*
+*.zip
+site/memes/09-retirement.png
+site/memes/11-speech.png
