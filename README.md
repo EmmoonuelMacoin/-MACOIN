@@ -43,7 +43,7 @@ The current art direction uses cobalt, navy, ivory and restrained red, with smal
 
 The profile background reinterprets the official presidential portrait's office, garden and flags in cartoon style; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature. `site/macoin-coin.png` is a separate front-facing cartoon token illustration with a silver ring and gold centre, available to download in the tokenomics section.
 
-The owner's announced token plan is a total supply of 1,000,000,000 $MACOIN, 1% buy tax and 1% sell tax. These are prelaunch specifications, not claims that a contract has already been deployed or verified. Allocation, liquidity and implementation details remain unannounced; do not invent burns, locks, audits or distribution percentages. Confirm launch-platform compatibility before deploying the token.
+The owner's announced token plan is a total supply of 1,000,000,000 $MACOIN and 0% token tax. The treasury card explains that pump.fun platform fees are separate, with a portion going to the Trésor Public of Soluna. These are prelaunch specifications, not claims that a contract has already been deployed or verified. Allocation and liquidity details remain unannounced; do not invent burns, locks, audits or distribution percentages.
 
 ## Contents
 
