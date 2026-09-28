@@ -1,4 +1,4 @@
-# $MACOIN — Liberté. Égalité. Liquidity.
+# $MACOIN — Liberté. Égalité. Liquidité.
 
 An English-language parody one-pager starring Emmoonuel Macoin, président of ze Républik of Soluna. Announced launch date: **17 October 2026**. Launch time is not yet announced.
 
