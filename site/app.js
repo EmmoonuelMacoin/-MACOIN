@@ -103,7 +103,7 @@
   const memes = [
     { number: '02', file: '02-dissolve.png', title: 'New problem. Same red button.', alt: 'Emmoonuel Macoin stands beside a large button marked Dissolve.' },
     { number: '04', file: '04-sunglasses.png', title: 'I hear you. Ze glasses do not.', alt: 'The absurdly long-headed president sips espresso while ordinary human protesters demonstrate behind him.' },
-    { number: '12', file: '12-moon.png', title: 'Ze debt has entered orbit.', alt: 'Macoin rides a blue, white and red rocket towards the Moon.' },
+    { number: '12', file: '12-moon.png', title: 'Ze debt has entered orbit.', alt: 'Macoin holds his silver-and-gold $MACOIN portrait coin while riding a blue, white and red rocket towards the Moon.' },
     { number: '01', file: '01-fired.png', title: 'Ze chart is red. Ze ministre is fired.', alt: 'A fictional prime minister leaves the palace carrying an office box.' },
     { number: '03', file: '03-queue.png', title: 'Please bring your own box.', alt: 'Fictional candidates queue outside the prime minister’s office.' },
     { number: '05', file: '05-tax.png', title: 'Ze tax is ze culture.', alt: 'The caricatured president demands tax from a worried farmer with normal human features.' },
