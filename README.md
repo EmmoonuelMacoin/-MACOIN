@@ -15,7 +15,11 @@ Preview: `http://127.0.0.1:4173`. The server only exposes `site/`.
 
 ## Cloudflare Pages
 
+Production domain: https://macoin.lol/
+
 Project: `emmoonuel-macoin` — https://emmoonuel-macoin.pages.dev/
+
+The custom apex domain `macoin.lol` points to `emmoonuel-macoin.pages.dev` through a Cloudflare-managed CNAME record.
 
 Connected repository: `EmmoonuelMacoin/-MACOIN`, production branch `main`. Pushes to `main` automatically deploy through Cloudflare Pages.
 
@@ -33,7 +37,7 @@ Edit `site/config.js` to add the verified contract address and specific pump.fun
 
 The date also appears in `site/index.html`, the page metadata and `site/macoin-lancement.ics`. Update all of these if the announced launch date changes.
 
-The original social preview is preserved in `site/og.png`. Metadata currently uses the Pages origin. Update the canonical URL and both social image URLs if adding a custom domain.
+The original social preview is preserved in `site/og.png`. The canonical URL and both social image URLs use the production domain `https://macoin.lol`.
 
 The current art direction uses cobalt, navy, ivory and a restrained red accent. The profile background is tricolour; Emmoonuel retains his original identity and sunglasses. The ordinary citizens in archives 04 and 05 have normal human faces, while government members retain the intentionally absurd caricature.
 
